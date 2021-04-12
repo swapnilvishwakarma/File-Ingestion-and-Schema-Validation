@@ -1,0 +1,29 @@
+columns: 
+  - row_id
+  - timestamp
+  - user_id
+  - content_id
+  - content_type_id
+  - task_container_id
+  - user_answer
+  - answered_correctly
+  - prior_question_elapsed_time
+  - prior_question_had_explanation
+dataset_name: trainfile
+dtypes: 
+  answered_correctly: int8
+  content_id: int16
+  content_type_id: boolean
+  prior_question_elapsed_time: float32
+  prior_question_had_explanation: boolean
+  row_id: int64
+  task_container_id: int16
+  timestamp: int64
+  user_answer: int8
+  user_id: int32
+file_name: train
+file_type: csv
+inbound_delimiter: ","
+outbound_delimiter: "|"
+skip_leading_rows: 1
+table_name: edsurv
